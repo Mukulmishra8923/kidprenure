@@ -1,0 +1,2015 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter&display=swap');
+
+@font-face {
+   font-family: 'pilcrow_rounded';
+   src: url(/assets/TTF/PilcrowRounded-Variable.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+}
+
+body{
+     background-color: #FFFCF3;
+      font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5 li a {
+   font-family: 'pilcrow_rounded';
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1520px !important;
+    
+    }
+}
+
+.navChild{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding: 24px 0px;
+    /* border-bottom: 1px solid #975100; */
+    border-bottom: 1px solid rgba(151, 81, 0, 0.2);
+
+    font-family: 'pilcrow_rounded';
+}
+.navTabs{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #818181;
+    cursor: pointer;
+    /* font-family: 'pilcrow_rounded' !important; */
+}
+.navTabs li.active {
+   color: black; /* Change this to your desired active color */
+}
+.navTabs li:hover{
+   color: #000000;
+   transition: all 0.3s ease;
+}
+.heroImg{
+    display: flex;
+    justify-content: center;
+   
+}
+.heroImg h1::after{
+   position: absolute;
+   content: url(/assets/images/sunCloud2.png);
+   top: -5%;
+   right: -20%;
+
+}
+.heroImg h1{
+ font-size: 90px;
+ font-weight: 700;
+ color: #274060;
+ line-height: 100%;
+ border: 2px solid #FECE39;
+ border-radius: 100px;
+ padding: 8px 29px;
+ letter-spacing: -0.02em;
+ position: relative;
+}
+
+ .heroHeading2{
+    font-size: 90px;
+    font-weight: 400;
+    color: #274060;
+    display: flex;
+    justify-content: center;
+    /* padding-right: 135px; */
+    letter-spacing: -0.02em;
+ }
+
+ .heroMain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 65px;
+ }
+ .heroMain .heroDesc{
+    font-size: 20px;
+    max-width: 710px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    color: #444444;
+ }
+  .joinBtn{
+    display: flex;
+    background-color: #FECE39;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 118%;
+    padding: 18px 48px;
+    border-radius: 180px;
+    font-family: 'pilcrow_rounded';
+    gap: 16px;
+    letter-spacing: 0.04em;
+    border: none;
+    position: relative;  
+ }
+ .joinBtn span{
+   margin-top: -1px;
+ }
+/* -------------------------------------------------------btnHover---------------------------------------- */
+ .joinBtn:hover
+ {
+   background-color: #192A55;
+   color: white;
+   transition: all 0.5s ease;
+ }
+
+ .joinBtn:hover svg{
+   fill: white;
+ }
+
+ .heroJoin{
+   position: relative;
+ }
+
+ .heroJoin::before {
+    position: absolute;
+   content:url('/assets/images/roundArrow.svg');
+   top: -25%;
+   left: -40%;
+  
+ }
+ 
+
+ 
+ .navBtn{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 4%;
+    padding: 13px 67px;
+    border: 1px solid #FECE39;
+    border-radius: 180px;
+    background: transparent;
+    display: flex;
+    gap: 16px;
+ }
+ .midText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+ }
+ .midBelowText h4{
+    font-size: 22px;
+    font-weight: 800;
+    /* letter-spacing: 0.04em; */
+    font-family: 'Nunito';
+
+ 
+   }
+   .midBelowText p{
+      color: #222222;
+   }
+ .midBelowText .midDesc{
+    font-size: 20px;
+    max-width: 430px;
+    line-height: 150%;
+    color: #333333;
+    font-style: italic;
+    font-weight: 500;
+ }
+.readBtnParent{
+   display: flex;
+   justify-content: center;
+}
+ .readBtn{
+    color: #FFC100;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    display: flex;
+    gap: 15px;
+    font-family: 'pilcrow_rounded';
+ }
+ .readBtn:hover svg{
+   fill: black;
+ }
+ .menu{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 18px;
+ }
+ .programsMenu {
+   background-color: #192A55;
+   margin-top: 120px;
+   color: white;
+   position: absolute;
+   border-radius: 24px;
+   position: relative;
+   padding: 40px;
+ }
+ .programsMenu::before{
+   content: url(/assets/images/lineShade.svg);
+   position: absolute;
+   left: -3%;
+   top: -20%;
+ }
+ .programsTab{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .programsMenu h3::after{
+   content: "";
+   position: absolute;
+   height: 150px;
+   width: 2px;
+   top: 19%;
+   left: 28%;
+   background-color: #818181;
+ }
+ .kidBoyAlign{
+   display: flex;
+   align-items: flex-end;
+ }
+ .kidBoy, .kidGirl{
+   position: relative;
+ }
+ .kidBoy::before {
+   content: url(/assets/images/starGroup.svg);
+   position: absolute;
+   top: -10%;
+   left: -12%;
+ }
+ .kidGirl::after{
+   content: url(/assets/images/starGroup.svg);
+   position: absolute;
+   top: -6%;
+    right: 2%;
+ }
+ .programsMenu h3{
+   font-size: 42px;
+   font-weight: 700;
+   text-align: center;
+ }
+ .programsMenu h4{
+   font-size: 28px;
+   font-weight: 700;
+ }
+
+ .carouselSection{
+   margin-top: 46px;
+ }
+ .logoCarousel  .owl-item img {
+   /* display: block; */
+   width: 74%;
+}
+.logoCarousel .item{
+   display: flex;
+   justify-content: center;
+}
+
+ .logoCarousel  .owl-dots .owl-dot span {
+   background: #FECE3933;
+}
+ .logoCarousel  .owl-dots .owl-dot.active span {
+   background: #FECE39;
+}
+.logoCarousel .owl-dots .owl-dot span:hover{
+   background-color: #FECE39;
+}
+
+
+.bookSection .booksCardParent{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+   gap: 16px;
+}
+.booksCardParent .card{
+   max-width: 365px;
+
+}
+.bookSection .booksData{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   
+}
+ .bookCard{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 40px 63px;
+   border: 1px solid #DFD0A0;
+   max-width: 365px;
+   max-height: 518px;
+   border-radius: 20px;
+   text-align: center;
+} 
+.bookCard .bookDetails{
+   margin-top: 32px;
+}
+.bookDetails p{
+   font-size: 16px;
+   font-weight: 700;
+   color: #3A4B60;
+}
+.bookSection{
+   margin-top: 90px;
+}
+.booksData h2{
+   margin-bottom: 27px;
+   font-size: 60px;
+   font-weight: 700;
+   color: #274060;
+   letter-spacing: -0.02em;
+
+}
+.booksData .booksHeadingPara{
+   color: #444444;
+   font-size: 20px;
+   margin-bottom: 40px;
+}
+.academyHelpList{
+   display: flex;
+   gap: 20px;
+}
+.academyPadding{
+   padding: 30px 0px;
+}
+.bookDetails .ageText{
+   margin-top: 32px;
+   font-size: 16px;
+   font-weight: 700;
+   color: #3A4B60;
+}
+.booksDetails h5{
+   font-size: 20px;
+   line-height: 150%;
+   color: #000000;
+   font-weight: 700;
+}
+
+.kidpreneursSection{
+   margin-top: 116px;
+   position: relative;
+}
+.kidpreneursSection .kidpreChild{
+   background-color: #192A55;
+   border-radius: 24px;
+   color: white;
+   padding: 100px 100px;
+}
+.kidpreChild h2{
+   font-size: 70px;
+   line-height: 100%;
+   padding-bottom: 60px;
+   text-align: center;
+   font-weight: 700;
+}
+.kidpreChild h3{
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 100%;
+   padding-bottom: 45px;
+}
+.academyList{
+   /* list-style: url(/assets/images/listIcon.svg); */
+   list-style: none;
+    font-size: 22px;
+   line-height: 130%;
+   gap: 32px;
+   display: flex;
+   flex-direction: column;
+   /* position: relative; */
+}
+.academyList li{
+   position: relative;
+   padding-left: 20px ;
+}
+.academyList li::before {
+   content: "";
+   position: absolute;
+   left: -6%;
+   top: 30%;
+   transform: translateY(-50%);
+   background-image: url('/assets/images/listIcon.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 24px; /* Adjust according to the icon's dimensions */
+   height: 24px; /* Adjust according to the icon's dimensions */
+ }
+
+
+.kidpreneursSection .row{
+   gap: 90px;
+}
+.kidTab{
+   display: flex;
+   color: rgb(27, 26, 26);
+   padding: 28px;
+   border-radius: 16px;
+   
+   max-width: 1077px;
+   margin: 10px;
+   position: absolute;
+   background-color: white;
+   left: 20%;
+   bottom: -12%;  
+   gap: 68px;
+}
+
+
+.kidTabText{
+   max-width: 695px;
+    font-size: 24px;
+   font-weight: 600;
+   line-height: 150%;
+   letter-spacing: -0.02em;
+}
+.kidTab .joinBtn{
+   max-height: 56px;
+}
+.formSection .kidCard{
+   background: #E7FFDC;
+   border: 1px solid #CEEEBF;
+   border-radius: 24px;
+   padding: 70px 72px;
+
+}
+.formSection .joinBtn{
+   padding: 18px 32px;
+}
+.kidCard p{
+   font-size: 22px;
+   letter-spacing: -0.02em;
+   margin: 45px 0px;
+   /* line-height: 133%; */
+   letter-spacing: -0.02em;
+}
+.formSection{
+   margin-top: 185px;
+}
+.formSection .personCard{
+   background: #E4F9FF;
+   border: 1px solid #CDECF5;
+   border-radius: 24px;
+    padding: 70px 67px;
+   
+}
+.personCard p{
+   font-size: 22px;
+    letter-spacing: -0.02em;
+    margin: 45px 0px;
+    /* line-height: 133%; */
+}
+.formSection h2{
+   font-size: 60px;
+   font-weight: 700;
+}
+.formParent{
+   display: flex;
+   gap: 30px;
+
+}
+.formLeftside{
+   max-width: 633px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.formRightside{
+   max-width: 736px;
+}
+.formName{
+   display: flex;
+   gap: 4%;
+}
+.formName .form-control{
+   width: 48%;
+
+}
+.formSecondSection{
+   margin-top: 40px;
+   padding: 60px;
+   border-radius: 20px;
+   background-color: #192A55;
+}
+.formSecondSection h4{
+   color: white;
+   font-size: 30px;
+   font-weight: 700;
+   
+}
+.formSection  input::placeholder {
+   color: rgb(253, 253, 253); /* Change this to the color you want */
+}
+.formSecondSection .row{
+   gap: 30px;
+}
+.formSecondSection h4 span{
+   color: #FECE39;
+}
+.formSecondSection p{
+   color: white;
+   font-size: 20px;
+   margin-top: 40px;
+}
+ .form-control {
+   padding: 24px 20px;
+   margin-bottom: 17px;
+   background-color: #274060;
+   border: unset;
+
+}
+.formBtn{
+   background: #FECE39;
+   font-family: 'pilcrow_rounded';
+   font-weight: 900;
+   font-size: 18px;
+
+   letter-spacing: 0.04em;
+}
+.formBtn:hover{
+   background-color: white;
+   transition: all 0.3s ease;
+}
+.entrepreneurSection{
+   margin-top: 116px;
+}
+.bigGirl{
+   position: relative;
+}
+.bigGirl::before{
+   content: url(/assets/images/starGroup.svg);
+   position: absolute;
+   left: 45%;
+   top: 2%;
+}
+
+.entrepreneurSection h2{
+   font-size: 60px;
+   font-weight: 700;
+   color: #192A55;
+   letter-spacing: -0.02em;
+}
+.entrepreneurSection ul{
+   margin-top: 45px;
+   padding-left: 43px;
+}
+.entrepreneurList li{
+   /* list-style: url(/assets/images/listIcon.svg); */
+   list-style: none;
+   font-size: 20px;
+   letter-spacing: -0.02em;
+   margin-bottom: 20px;
+   color: #274060;
+   position: relative;
+}
+.entrepreneurList li::before {
+   content: "";
+   position: absolute;
+   left: -6%;
+   top: 30%;
+   transform: translateY(-50%);
+   background-image: url('/assets/images/listIcon.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 24px; /* Adjust according to the icon's dimensions */
+   height: 24px; /* Adjust according to the icon's dimensions */
+ }
+ .entrepreneurListParent{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 80px 0px;
+ }
+ .achieversSection{
+   margin-top: 120px;
+ }
+ .achieversSection .recentAchievers{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 80px;
+   position: relative;
+ }
+ .achieversBtn{
+   max-height: 60px;
+   position: relative;
+ }
+ .achieversBtn::after{
+   position: absolute;
+   content: url(/assets/images/lineShadeRight.svg);
+   top: -58%;
+   right: -25%;
+ }
+ .recentAchievers h2::before{
+   position: absolute;
+   left: 9%;
+   top: -65%;
+   content: url(/assets/images/new.svg);
+ }
+.achieversSection .achieverChild{
+   display: flex;
+   gap: 32px;
+}
+.achieverChild .childDetails{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+}
+.childDetails .childAge{
+   font-size: 20px;
+}
+.childAge span{
+   padding-left: 10px;
+   font-weight: 700;
+}
+.childDetails h5{
+   font-size: 32px;
+   font-weight: 800;
+   letter-spacing: -0.02em;
+}
+
+
+
+
+
+
+.blogMargin{
+   margin-top: 120px;
+}
+.blogCard{
+   width: 465px;
+   padding: 5px;
+   border: 1px solid #E9DDBA;
+   background-color: #FFFCF3;
+}
+ .blogCardParent .card-title{
+   font-size: 26px;
+   font-weight: 800;
+}
+.blogGap{
+   display: flex;
+   flex-direction: column;
+   gap: 45px;
+}
+
+.booksCardParent .card-body{
+   padding: 2rem 1rem 1rem 1rem;
+   font-family: 'Nunito';
+   /* background-color: #FFFCF3; */
+}
+.blogBtn{
+   display: flex;
+   justify-content: center;
+   margin-top: 11px;
+}
+.blogButton{
+   background-color: #FECE39;
+   font-size: 20px;
+   display: flex;
+   gap: 16px;
+   padding: 15px 48px;
+   border-radius: 180px;
+   font-weight: 800;
+   border: none;
+   font-family: 'pilcrow_rounded';
+   letter-spacing: 0.04em;
+}
+.blogButton span{
+   margin-top: -1px;
+}
+.blogButton:hover {
+   background-color: #192A55;
+   color: white;
+}
+.blogButton:hover svg{
+  
+   fill: white;
+}
+
+.learnMore{
+   font-family: 'pilcrow_rounded';
+   color: black;
+   font-size: 20px;
+   font-weight: 800;
+   padding: 0;
+   display: flex;
+   gap: 12px;
+}
+.learnMore:hover{
+   color: #B89427;
+}
+.blogSection{
+   margin-top: 120px;
+}
+.blogHeader{
+   text-align: center;
+   
+}
+.blogHeader p{
+   color: #444444;
+   font-size: 20px;
+}
+.blogSection h2{
+   font-size:60px ;
+   font-weight: 700;
+   color: #274060;
+}
+.blogCardParent{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 45px;
+}
+.empoweredSection{
+   margin-top: 120px;
+   letter-spacing: -0.02em;
+}
+.empoweredSection .row{
+   justify-content: space-between;
+}
+.empoweredLeftSection .empBtn{
+   position: relative;
+   font-weight: 700;
+   
+}
+.empBtn::after{
+   content: url(/assets/images/littleLineShade.svg);
+   position: absolute;
+   top: -26%;
+    left: 96%;
+}
+.empoweredLeftSection{
+   background: #192A55;
+   color: #ffffff;
+   padding: 65px 72px;
+   border-radius: 24px;
+   max-width: 677px;
+   /* max-height: 577px; */
+}
+.empoweredLeftSection h2{
+   font-size: 59px;
+   font-weight: 700;
+   line-height: 110%;
+   letter-spacing: -0.02em;
+}
+.empoweredLeftSection h2 span{
+color: #FECE39;
+}
+.empoweredLeftSection p{
+   font-size: 24px;
+   line-height: 150%;
+   letter-spacing: -0.02em;
+   font-family: 'Nunito', sans-serif;
+   margin: 35px 0px;
+}
+.empoweredRight{
+   max-width: 819px;
+}
+.brotherSection{
+   margin-top: 120px;
+}
+.brotherSection p{
+   font-weight: 600;
+   padding: 0px 5px 20px 0px;
+}
+.brotherImg{
+   background-image: url(/assets/images/BrothersImg.png);
+   background-repeat: no-repeat;
+   /* background-size: cover; */
+   /* height: 622px; */
+   display: flex;
+   align-items: center;
+}
+.brotherSection .brotherHeading{
+   font-size: 60px;
+   font-weight: 700;
+   color: #274060;
+   margin-bottom: 40px;
+   letter-spacing: -0.02em;
+   position: relative;
+}
+
+.brotherHeading::after{
+   content: url(/assets/images/starGroup.svg);
+   position: absolute;
+   top: -30%;
+    left: 97%;
+
+}
+.brotherText{
+  max-width: 564px;
+  padding: 133px 0px;
+margin-left: 80px;
+}
+.brotherSection .brotherImgText1{
+   font-size: 60px;
+   color: white;
+   font-weight: 400;
+   
+
+}
+.brotherSection .brotherImgText2{
+   font-size: 60px;
+   font-weight: 700;
+   color: white;
+   margin: 30px 0px;
+   
+}
+.brotherSection h5{
+   color: white;
+   font-weight: 700;
+}
+
+/* -----------------------------------------testimonialSection---------------------------------------------------- */
+.testimonialSection{
+   /* padding: 70px; */
+   margin-top: 120px;
+
+}
+.testimonialSection h2{
+   text-align: center;
+   font-size: 60px;
+   font-weight: 700;
+   color: #274060;
+   margin-bottom: 10px;
+   letter-spacing: -0.02em;
+}
+.testimonialCarousel  .owl-dots .owl-dot span {
+   background: #FECE3933;
+}
+ .testimonialCarousel  .owl-dots .owl-dot.active span {
+   background: #FECE39;
+}
+.testimonialCarousel  .owl-dots .owl-dot:hover span {
+   background: unset;
+}
+.testimonialCarousel .owl-stage-outer {
+   position: relative;
+   overflow: hidden;
+   padding: 60px 0px;
+}
+.testimonialCarousel .owl-stage-outer::before{
+   position: absolute;
+   content: url(/assets/images/starGroup.svg);
+   bottom: 2%;
+   left: 22%;
+
+}
+
+.testimonialCarousel  .owl-item img {
+   display: unset; 
+    width: unset; 
+}
+
+   .testimonialCard {
+      display: flex;
+      background: #FFF1E1;
+      max-width: 417px;
+      height: 520px;
+      padding: 40px;
+      transform: rotate(-15deg);
+      text-align: center;
+      border-radius: 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: -180px;
+  }
+   
+
+.testimonialCard2{
+   display: flex;
+      background: #FFF1E1;
+      max-width: 417px;
+      height: 520px;
+      padding: 40px;
+      transform: rotate(15deg);
+      text-align: center;
+      border-radius: 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: -180px;
+   
+}
+.testimonialCard  .star , .testimonialCard2 .star{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+}
+.testimonialCard p,.testimonialCard2 p{
+   font-size: 24px;
+   line-height: 160%;
+}
+.testimonialCard h5 ,.testimonialCard2 h5{
+   font-size: 24px;
+   font-weight: 700;
+}
+/* -------------------------------videoSection----------------------------------------- */
+.videoSection{
+   margin-top: 120px;
+}
+.videoSection .videoHeading{
+   font-size: 24px;
+   color: #274060;
+   text-align: center;
+   font-weight: 500;
+   margin-top: 35px;
+   margin-bottom: 55px;
+ }
+.videoCardParent{
+   display: flex;
+   justify-content: space-between;
+}
+.videoCardParent .card{
+   max-width: 360px;
+   height: 500px;
+   padding: 0px;
+   border-radius: 20px;
+   position: relative;
+
+}
+   .playParent {
+      height: 50px;
+      display: flex;
+      width: 50px;
+      border: 2px solid #FECE39;
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, .1);
+      cursor: pointer;
+  }
+
+
+ .video-thumbnail { 
+   height: 100%; 
+   width: 100%; 
+   position: absolute; 
+   z-index: 1; 
+   background-size: cover; 
+   top: 0; 
+   left: 0; 
+   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5); /* Inner box-shadow */
+   
+}
+.videoText{
+   position: absolute;
+   display: flex;
+   z-index: 22;
+   gap: 35px;
+   bottom: 5%;
+   padding: 0px 32px;
+}
+.videoText p{
+   max-width: 170px;
+   font-weight: 500;
+   color: #FFFFFFCC;
+}
+.videoSection h2{
+ font-size: 60px;
+ font-weight: 700;
+ color: #274060;
+ text-align: center;
+ letter-spacing: -0.02em;
+ max-width: 701px;
+}
+.videoHeading1{
+   display: flex;
+   justify-content: center;
+}
+
+.footerSection{
+  
+  border-radius: 62px;
+}
+.footerSection .container{
+    background: #192A55;
+     color: white;
+     border-radius: 62px 62px 0px 0px;
+   margin-top: 120px;
+   padding: 80px 80px 0px 80px;
+   border-bottom: 1px solid #FFFFFF;
+}
+.footerImg{
+   text-align: center;
+   /* max-width: 594px; */
+}
+.socialLogo{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+.sociallogo:hover  {
+   background-color: #0a0a0a;
+   border-radius: 100px;
+ }
+
+.socialLogo:hover svg path {
+   /* fill: #FFC100; */
+ }
+.footerText{
+   display: flex;
+   justify-content: center;
+
+}
+.footerImg .row{
+   display: flex;
+   justify-content: space-between;
+}
+.footerImg p{
+      margin: 32px;
+font-size: 20px;
+line-height: 140%;
+font-weight: 700;
+max-width: 684px;
+font-family: 'pilcrow_rounded';
+
+}
+.footerSection .leftLinks{
+   display: flex;
+   flex-direction: column;
+   
+  
+}
+.leftLinkParent{
+   display: flex;
+   gap: 70px;
+}
+.footerLink{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 80px;
+   border-bottom: 1px solid rgba(255, 255, 255,0.2);
+}
+.innerLink{
+   display: flex;
+   flex-direction: column;
+}
+
+.footerSection h2{
+   color: #A3CBFF;
+}
+.footerSection .rightLinks{
+   display: flex;
+   flex-direction: column;
+  align-items: end;
+}
+.footerSection a{
+   color: white;
+   text-decoration: none;
+   margin-top: 0px;
+   font-size: 20px;
+   font-weight: 600;
+}
+.footerSection a:hover{
+ color: black;
+}
+.innerLink .endDirection{
+ display: flex;
+ flex-direction: row-reverse;
+}
+.copyRightSection{
+  
+   display: flex;
+   justify-content: center;
+   color: rgba(255, 255, 255, 0.5);
+   font-weight: 500;
+
+   padding: 20px;
+}
+
+.bookSection .card{
+   border-radius: 20px;
+   border-color: #DFD0A0;
+
+   background-color: #FFFCF3;
+}
+
+.cardImg{
+   padding: 35px 55px 0px 55px;
+}
+.bookSection .card-title{
+   font-size: 20px;
+   font-weight: 700;
+   text-align: center;
+   font-family: 'Nunito';
+
+}
+.bookSection .card-text{
+   font-size: 16px;
+   font-family: 'Nunito';
+   font-weight: 700;
+    color: #878787;
+   text-align: center;
+
+}
+.card-body p{
+   margin-bottom: 5px;
+}
+
+
+
+
+
+/* -------------------------------------------responsive css--------------------------------- */
+
+@media (max-width: 1440px) {
+   .container {
+       max-width: 95% !important;
+   
+   }
+}
+
+
+
+
+
+
+@media  (max-width: 1280px) {
+   
+   
+
+   .booksCardParent .card{
+      max-width: 292px;
+   
+   }
+
+   /* --------------------------------------formSection------------------------------------------------------------------ */
+   .formSection h2 {
+      font-size: 56px;
+      font-weight: 700;
+  }
+  .formSecondSection {
+   margin-top: 40px;
+   padding: 59px 28px;
+   border-radius: 20px;
+   background-color: #192A55;
+}
+  .formSection .kidCard {
+   padding: 70px 69px;
+}
+
+.kidTab{
+   left: 8%;
+   bottom: -12%;
+}
+.formLeftside {
+   max-width: 601px;
+}
+.formSecondSection .row {
+   gap: 25px;
+}
+.formSecondSection h4 {
+   color: white;
+  
+}
+.formRightside {
+   max-width: 525px;
+}
+
+.empoweredRight {
+   max-width: 676px;
+}
+.empoweredLeftSection p {
+   font-size: 21px;
+   margin: 30px 0px;
+}
+.empoweredLeftSection {
+ 
+   padding: 46px 55px;
+  
+   max-width: 540px;
+}
+
+.empoweredLeftSection h2 {
+   font-size: 45px;
+}
+
+/* ---------------------------------------blogCardSection--------------------------------------------------------------- */
+.blogCard {
+   width: 365px;
+ 
+}
+.blogCardParent .card-title {
+   font-size: 21px;
+   font-weight: 800;
+}
+
+
+
+
+/* -------------------------------------------------brothersSection---------------------------------------------------------- */
+.brotherHeading::after {
+   left: 94%;
+}
+
+
+
+
+/* ---------------------------kidprenuerSection----------------------------------- */
+.kidpreneursSection .kidpreChild {
+   background-color: #192A55;
+   border-radius: 24px;
+   color: white;
+   padding: 98px 68px;
+}
+.kidpreneursSection .row {
+   gap: 70px;
+}
+
+
+
+/* ----------------------achieversSection------------------------------------------------------------- */
+.achieversSection .recentAchievers .achieversLine{
+   max-width: 36%;
+}
+
+.entrepreneurSection h2 {
+   font-size: 55px;
+}
+
+.achieversBtn::after {
+   right: -17%;
+}
+
+
+
+
+/* --------------------------------------videoSection-------------------------------------------------- */
+.videoCardParent .card {
+   max-width: 292px;
+   position: relative;
+}
+
+
+/* ---------------------------------testimonialSection---------------------------------------------------------- */
+.testimonialCard2 {
+  
+   max-width: 364px;
+   height: 475px;
+   padding: 30px;
+}
+.testimonialCard {
+  
+   max-width: 364px;
+   height: 475px;
+   padding: 30px;
+}
+
+.testimonialCard p, .testimonialCard2 p {
+   font-size: 21px;
+   line-height: 160%;
+}
+
+
+
+
+
+ }
+
+
+ /* ----------------------------------------------tabResponsive----------------------------------------------------------- */
+
+ @media (max-width: 1024px) {
+
+   .navSection{
+      display: none;
+   }
+   .sidepanel {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 100%;
+      background: #B89427;
+      overflow-x: hidden;
+      padding-top: 50px;
+      transition: 0.3s;
+  }
+  .sidepanel a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 700;
+   color: rgb(0, 0, 0);
+   display: block;
+   text-transform: uppercase;
+   transition: 0.3s;
+}
+.sidepanel a:not(:first-child):hover {
+   color: #EEB405;
+   background-color: black;
+}
+.sidepanel a:hover {
+   color: #F3C6C6;
+}
+.sidepanel .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 40px;
+   margin-left: 50px;
+}
+.hide-sidebar {
+   padding: 10px;
+   border-bottom: 1px solid #FECE39;
+}
+.openbtn {
+   font-size: 35px;
+   cursor: pointer;
+   background: transparent;
+   color: #EEB405;
+   border: none;
+   margin-top: -10px;
+   float: right;
+}
+.header-logo{
+   margin-top: -8px;
+   padding-bottom: 14px;
+}
+.openbtn:hover {
+   color: #FFC100;
+}
+
+.navbar-collapse{
+   background: #FFFCF3;
+   
+}
+
+
+/* -------------------------------------------------------------tabHeroSection----------------------------------------------- */
+
+.heroSection .row{
+   gap: 30px;
+}
+.kidBoy::before {
+   top: 0%;
+   left: 11%;
+}
+
+.kidGirl::after {
+   top: 0%;
+   right: 23%;
+}
+.kidTabText {
+   max-width: 695px;
+   font-size: 19px;
+   
+}
+.kidBoyAlign {
+   display: block;
+   /* align-items: flex-end; */
+}
+.heroImg h1 {
+   font-size: 59px;
+}
+.heroImg h1::after {
+   top: -20%;
+   right: -26%;
+}
+.heroHeading2 {
+   font-size: 59px;
+   
+}
+/* ---------------------------------------------tabachieversSection------------------------------------------------------------------------- */
+.achieversSection .recentAchievers .achieversLine {
+   max-width: 3%;
+}
+.entrepreneurSection h2 {
+   font-size: 45px;
+}
+.childDetails h5 {
+   font-size: 27px;
+ 
+}
+.childDetails .childAge {
+   font-size: 16px;
+}
+.childSize{
+   width: 100%;
+}
+.entrepreneurSection .row {
+   display: flex;
+   gap: 0px;
+}
+
+   .childDetails h5 {
+       font-size: 20px;
+   }
+   .childAge span {
+      padding-left: 0px;
+      
+  }
+/* ------------------------------------------------------------------------tabkidSecion-------------------------------------------------- */
+.heroMain .heroDesc {
+   font-size: 16px;
+   max-width: 535px;
+ 
+}
+
+.kidTab {
+   /* display: flex; */
+   color: rgb(27, 26, 26);
+   padding: 13.5px;
+ 
+   max-width: 617px;
+   margin: 10px;
+   left: 8%;
+   text-align: center;
+   bottom: -6%;
+   gap: 20px;
+}
+.kidTab .joinBtn {
+   max-height: 75px;
+}
+/* -----------------------------------------tabformSection------------------------------------------- */
+
+.formSection .row{
+   gap: 40px;
+}
+
+.formSecondSection p {
+ 
+   margin-top: 20px;
+}
+
+/* --------------------------------------------tabFormSection-------------------------------------------------------------- */
+
+.formLeftside {
+   /* max-width: 601px; */
+   max-width: 100%;
+}
+    .formSecondSection h4 {
+        color: white;
+    }
+    .formRightside {
+      /* max-width: 525px; */
+      max-width: 100%;
+  }
+
+
+
+  /* -------------------------------------------------------------------tabEmpoweredSection-------------------------------------------------- */
+  .empoweredSection .row{
+   gap: 20px;
+  }
+  .empoweredLeftSection {
+   padding: 46px 55px;
+   max-width: 100%;
+}
+.empoweredRight {
+   max-width: 100%;
+}
+
+
+
+/* -------------------------------------------------tabbrotherSection------------------------------------------------------------------------------ */
+.brotherSection .brotherImgText1 {
+   font-size: 45px;
+
+}
+.brotherSection .brotherImgText2 {
+   font-size: 45px;
+ 
+}
+.brotherText {
+   max-width: 430px;
+   padding: 75px 0px;
+   margin-left: 80px;
+}
+
+/* --------------------------------------------------tabblogSection------------------------------------ */
+.blogCard {
+   width: 20rem;
+}
+.blogSection {
+   margin-top: 40px;
+}
+
+
+.blogMargin {
+   margin-top: unset;
+}
+
+.lastBlog {
+   display: flex;
+    flex-direction: row;
+   gap: 45px;
+}
+.blogBtn {
+   display: none;
+
+}
+.cardList1 {
+   display: flex;
+   flex-direction: column;
+   gap: 45px;
+}
+
+/* ------------------------------------------------------booksSection---------------------------------------------- */
+.booksCardParent .card {
+   max-width: 305px;
+}
+.bookSection .booksCardParent {
+   display: flex;
+   /* justify-content: space-between; */
+   margin-bottom: 40px;
+   gap: 35px;
+   padding: 0px 36px;
+}
+
+/* ----------------------------------------------------------tabbentrepreneurSection---------------------------------------------- */
+
+.entrepreneurSection {
+   margin-top: 40px;
+}
+.entrepreneurSection .row{
+   display: flex;
+   gap: 0px;
+}
+
+.entrepreneurListParent {
+   padding: 20px 0px;
+}
+
+
+/* -----------------------------------------------------------tabvideoSection--------------------------------------------------- */
+.videoSection h2 {
+   font-size: 45px;
+   max-width: 530px;
+}
+
+.videoCardParent .card {
+   max-width: 305px;
+}
+.videoText {
+  
+   gap: 25px;
+  
+}
+/* .videoSection .row{
+   gap: 20px;
+} */
+.videoSection {
+   margin-top: 40px;
+}
+.videoCardParent .card {
+   height: 410px;
+   
+}
+.videoCardParent {
+   display: flex;
+   /* justify-content: space-between; */
+   gap: 27px;
+   padding: 0px 46px;
+}
+
+/* ------------------------------------------------------tabchildAchieverSection-------------------------------------------------------- */
+.childAchiever .col-sm-6{
+   width: 48%;
+}
+.achieverChild .childDetails {
+ 
+   gap: 4px;
+}
+/* --------------------------------------------------------tabtestimonialSection------------------------------------------------------------- */
+.testimonialSection {
+   
+   margin-top: 40px;
+}
+.testimonialCard {
+   max-width: 302px;
+   height: 422px;
+   padding: 25px;
+
+ }
+ .testimonialCard2 {
+  
+   max-width: 302px;
+   height: 422px;
+   padding: 25px;
+
+ }
+ .testimonialCard p, .testimonialCard2 p {
+   font-size: 20px;
+}
+
+/* -------------------------------------------------------footerSection------------------------------------------------------- */
+.footerSection .container {
+   
+   border-radius: 62px 62px 0px 0px;
+   margin-top: 50px;
+   padding: 35px 35px 0px 35px;
+}
+.footerLink {
+   padding: 30px 0px;
+ 
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* ---------------------------------------------mobileResponsive--------------------------------------------------------------- */
+
+@media (max-width:767px){
+
+
+/* -------------------------------------heroSection----------------------------------------------------------------------- */
+.heroImg h1::after {
+   top: -153%;
+   right: -31%;
+}
+.kidGirl::after {
+   top: 0%;
+   right: 8%;
+}
+.heroJoin::before {
+   top: -25%;
+   left: -39%;
+}
+.kidBoy::before {
+   top: 0%;
+   left: -6%;
+}
+.boySize{
+   width: 100%;
+}
+
+.heroImg h1 {
+   font-size: 24px;
+}
+.heroHeading2 {
+   font-size: 24px;
+}
+.kidBoy.img{
+   width: 80%;
+}
+.midBelowText .midDesc {
+ 
+   margin-top: 15px;
+}
+
+
+/* ---------------------------------bookSection------------------------------------------------------------ */
+
+.bookSection {
+   margin-top: 35px;
+}
+.booksData h2 {
+   font-size: 30px;
+   
+}
+.booksData .booksHeadingPara {
+   text-align: center;
+   margin-bottom: 32px;
+}
+
+.bookSection .booksCardParent {
+ 
+   justify-content: center;
+   margin-bottom: 40px;
+   gap: 16px;
+}
+
+
+
+/* ---------------------------------------------------------mobileKidPreSection---------------------------------------------- */
+.kidpreChild h2 {
+   font-size: 30px;
+ ;
+   padding-bottom: 35px;
+   text-align: center;
+   font-weight: 700;
+}
+
+   .kidpreneursSection .kidpreChild {
+       background-color: #192A55;
+       border-radius: 24px;
+       color: white;
+       padding: 45px 20px;
+   }
+   .kidpreChild h3 {
+      font-size: 30px;
+      padding-bottom: 45px;
+  }
+
+  .academyList li::before {
+   left: -13%;
+   top: 30%;
+   
+}
+.academyList li {
+   position: relative;
+   padding-left: 5px;
+}
+
+/* ---------------------------------------------------------programsMenu---------------------------------------------------- */
+
+.programsMenu .row{
+   gap: 20px;
+}
+.programsMenu::before {
+   left: 0%;
+   top: -11%;
+}
+
+/* --------------------------------------------------------formSection------------------------------------------------------ */
+
+.formSection {
+   margin-top: 225px;
+}
+.formSection .kidCard {
+   padding: 17px 15px;
+}
+.formSection h2 {
+   font-size: 30px;
+}
+.formSection .personCard {
+   padding: 15px 15px;
+}
+
+
+.kidTab {
+   display: flex;
+   flex-direction: column;
+  
+   padding: 10.5px;
+   max-width: 284px;
+   margin: 10px;
+   left: 7%;
+   bottom: -19%;
+   gap: 20px;
+}
+
+
+/* -----------------------------------entreprenuerSection-------------------------------------------------------------------------- */
+
+.entrepreneurSection ul {
+   margin-top: 45px;
+   padding-left: 35px;
+}
+.entrepreneurList li::before {
+
+   left: -12%;
+   top: 30%;
+ 
+}
+.entrepreneurSection h2 {
+   font-size: 28px;
+}
+.entrepreneurListParent {
+   padding: 0px 20px;
+}
+.entrepreneurList li {
+   font-size: 17px;
+   
+}
+.entrepreneurSection ul {
+   margin-top: 25px;
+   padding-left: 35px;
+}
+.entrepreneurList li::before {
+   left: -14%;
+   top: 50%;
+}
+
+/* ------------------------------------------achieverSection----------------------------------------------------------------------------- */
+.achieversSection .recentAchievers {
+  
+   flex-wrap: wrap;
+   gap: 25px;
+
+}
+.recentAchievers h2::before {
+   left: 12%;
+   top: -40%;
+ 
+}
+.achieversSection .achieverChild {
+    display: flex;
+    gap: 24px;
+}
+
+/* -------------------------------------------------joinBtn----------------------------------------------------------------- */
+.joinBtn {
+   font-size: 16px;
+  
+   padding: 18px 35px;
+   max-width: fit-content;
+  
+}
+
+/* --------------------------------------------blogSection---------------------------------------------------------------------------------- */
+
+.blogSection h2 {
+   font-size: 33px;
+}
+
+.blogHeader p {
+   color: #444444;
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+.lastBlog {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+
+/* ------------------------------------------------empoweredSection----------------------------------------------------------------------------- */
+.empoweredLeftSection h2 {
+   font-size: 28px;
+}
+
+.empoweredLeftSection {
+   padding: 15px 15px;
+   max-width: 100%;
+}
+.empoweredLeftSection p {
+   font-size: 16px;
+   margin: 30px 0px;
+}
+.empoweredSection {
+   margin-top: 40px;
+}
+
+/* ----------------------------------------------------brotherSection----------------------------------------------------------------- */
+.brotherSection {
+   margin-top: 40px;
+}
+.brotherSection .brotherHeading {
+   font-size: 29px;
+   margin-bottom: 40px;
+}
+.brotherHeading::after {
+   left: 77%;
+}
+
+.brotherSection .brotherImgText1 {
+   font-size: 29px;
+}
+.brotherSection .brotherImgText2 {
+   font-size: 30px;
+}
+
+
+.brotherText {
+   max-width: 190px;
+   padding: 30px 0px;
+}
+
+
+/* -----------------------------------------------------------------testimonialSection----------------------------------------------------------- */
+.testimonialSection h2 {
+      font-size: 30px;
+  
+}
+.testimonialCard p, .testimonialCard2 p {
+   font-size: 16px;
+}
+.testimonialCard {
+   max-width: 250px;
+   height: 383px;
+   padding: 25px;
+}
+.testimonialCard2 {
+   max-width: 250px;
+   height: 383px;
+   padding: 25px;
+}
+
+
+/* ------------------------------------------------------videoSection-------------------------------------------------------------------- */
+.videoSection h2 {
+   font-size: 30px;
+   max-width: 100%;
+}
+.videoSection .videoHeading {
+   font-size: 20px;
+   margin-top: 10px;
+   margin-bottom: 40px;
+}
+.videoCardParent {
+   display: flex;
+   /* justify-content: space-between; */
+   gap: 27px;
+   padding: unset;
+}
+
+
+.footerSection .container {
+  
+   margin-top: 20px;
+   padding: 20px;
+}
+
+.videoCardParent .card {
+   height: 340px;
+}
+.videoCardParent {
+  
+   justify-content: center;
+}
+/* ----------------------------------------------------footerSection------------------------------------------------------------------------------- */
+
+.footerLink {
+  
+   flex-wrap: wrap;
+   margin-top: 25px;
+   gap: 25px;
+}
+.innerLink .endDirection {
+   flex-direction: unset;
+}
+.footerImg p {
+   margin: 32px;
+   font-size: 16px;
+   max-width: 100%;
+  
+}
+.footerSection a {
+   
+   font-size: 16px;
+}
+.footerLink {
+   padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
